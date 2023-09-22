@@ -10,10 +10,53 @@
     {% bootstrap_javascript %}
     {% bootstrap_messages %}
 
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">Hugo Contreras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
+                    <a class="nav-link" href="">Sobre mi</a>
+                    <a class="nav-link" href="">Portafolio</a>
+                    <a class="nav-link" href="">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<H1>HOLA MUNDO</H1>
+    <!-- CABECERA -->
+    {% block cabecera %} 
+    <div class="home imagen-fondo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 titulos">
+                    <div>
+                        <h1 class="display-4 fw-bold">Hugo Contreras Santana</h1>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Full Stack Developer With Python</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock cabecera %} 
+    
+    <!-- CONTENIDO -->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+        <div class="container">
+            {% block content %} {% endblock content %}
+        </div>
+    </div> 
 
 </body>
 </html>
