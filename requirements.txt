@@ -15,7 +15,7 @@ psycopg2-binary==2.9.6
 pytz==2023.3.post1
 soupsieve==2.4.1
 sqlparse==0.4.4
-stevedore==5.1.0
+stevedore>=5.0.0,<6.0.0
 tzdata==2023.3
 virtualenv==20.23.0
 virtualenv-clone==0.5.7
