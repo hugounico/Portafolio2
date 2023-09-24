@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-btfdr@9(u-c1#m9l_y&)5$2pd)@u7l8f0r%8##fyvo@)-wf2+=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://intento-nuevo-ouhj.onrender.com/', 'https://hcfullstack.com/', 'https://www.hcfullstack.com/']
 
 
 # Application definition
