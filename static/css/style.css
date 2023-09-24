@@ -7,6 +7,9 @@
 .home {
     background-image: url(../img/FondoHome.jpg);
 }
+.contact {
+    background-image: url(../img/contact-bg.png);
+}
 
 .imagen-fondo {
     background-position: center center;
