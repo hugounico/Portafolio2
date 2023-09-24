@@ -10,6 +10,17 @@
 .contact {
     background-image: url(../img/contact-bg.png);
 }
+.about {
+    background-image: url(../img/FondoAbout.jpg);
+    
+}
+#about {
+    background-position: right center;
+    min-height: 60vh;
+    background-attachment:scroll;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
 
 .imagen-fondo {
     background-position: center center;

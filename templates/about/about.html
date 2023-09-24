@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Sobre mi {% endblock title %}
+
+{% block cabecera %}
+<div class="about imagen-fondo" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 titulos">
+                <div>
+                    <h1 class="display-4 fw-bold">Hugo Contreras Santana</h1>
+                </div>
+                <div>
+                    <h3 class="fs-2">Full Stack Developer With Python</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock cabecera %}
+
+
+{% block content %}
+
+<div class="row d-flex">
+    <div class="col-4 offset-md-auto">
+        <img class="img-fluid img-thumbnail img-circle img-perfil " src="../../static/img/ProfilePic.png" alt="">
+    </div>
+    <div class="col-6">
+        <h4><br>Desarrollador Full Stack con Python e Ingeniero Comercial con más de 7 años de experiencia 
+            en Retail y Supply Chain. Me caracterizo por ser una persona Orientada al servicio, Comprometida, Responsable, Autónoma. 
+            Mi trayectoria enriquecida por la colaboración en equipos multidisciplinarios me facilita la integración en distintas organizaciones
+             y cargos. Ansiando nuevos desafíos que fomenten mi crecimiento y me conecten con las últimas fronteras tecnológicas.</h4>
+    </div>
+</div> 
+
+<div class="row d-flex pt-5">
+    <div class="col-12">
+        <h2 class="fw-bold">Formación Académica</h2>
+
+        {% for course in courses %}
+        <h3>{{ course.title }}</h3>
+            <p><strong>{{ course.year }}</strong> {{ course.Institution }}</p>
+            <p><strong>Descripción:</strong>{{ course.Description }}</p>
+            <hr>
+        {% endfor %}
+       
+        <h2 class="fw-bold">Conocimientos</h2>
+        <section class="skills" id="skills">
+            <div class="skills__container" id="skills">
+                
+                {% for skill in skills %}
+                <div class="card__skills">
+                    <div class="skill__thumbnail">
+                        <img class="skill__logo" src='{{ skill.image.url }}' alt="html5">
+                    </div>
+                    <div class="skill__texto">
+                        <p class="skill__titulo">{{ skill.title }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+    </div>
+</div> 
+{% endblock content %}
