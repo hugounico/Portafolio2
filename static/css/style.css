@@ -21,6 +21,9 @@
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
+.portfolio {
+    background-image: url(../img/portfolio-bg.jpeg);
+}
 
 .imagen-fondo {
     background-position: center center;
