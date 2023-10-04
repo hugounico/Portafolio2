@@ -5,13 +5,13 @@
 
 /* IMAGENES DE FONDO DE LAS PAGINAS */
 .home {
-    background-image: url(../img/FondoHome.jpg);
+    background-image: url(../img/Portadaverdedorado1.jpg);
 }
 .contact {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/Portadaverdedorado5.jpg);
 }
 .about {
-    background-image: url(../img/FondoAbout.jpg);
+    background-image: url(../img/Portadaverdedorado2.jpg);
     
 }
 #about {
@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
 }
 .portfolio {
-    background-image: url(../img/portfolio-bg.jpeg);
+    background-image: url(../img/Portadaverdedorado3.jpg);
 }
 
 .imagen-fondo {
@@ -31,6 +31,15 @@
     background-attachment:scroll;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.prof-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centrar-h4 {
+    margin: 0; 
 }
 
 /* TITULOS DE CABECERA*/

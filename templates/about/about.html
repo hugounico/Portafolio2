@@ -22,12 +22,12 @@
 
 {% block content %}
 
-<div class="row d-flex">
-    <div class="col-4 offset-md-auto">
-        <img class="img-fluid img-thumbnail img-circle img-perfil " src="../../static/img/ProfilePic.png" alt="">
+<div class="row d-flex img-text">
+    <div class="col-4 offset-md-auto bg-transparent">
+        <img class="img-fluid img-circle img-perfil bg-transparent" src="../../static/img/ProfilePic.png" alt="" id="img-perfil">
     </div>
-    <div class="col-6">
-        <h4><br>Desarrollador Full Stack con Python e Ingeniero Comercial con más de 7 años de experiencia 
+    <div class="col-6 d-flex align-middle prof-text">
+        <h4 class="text-center centrar-h4">Desarrollador Full Stack con Python e Ingeniero Comercial con más de 7 años de experiencia 
             en Retail y Supply Chain. Me caracterizo por ser una persona Orientada al servicio, Comprometida, Responsable, Autónoma. 
             Mi trayectoria enriquecida por la colaboración en equipos multidisciplinarios me facilita la integración en distintas organizaciones
              y cargos. Ansiando nuevos desafíos que fomenten mi crecimiento y me conecten con las últimas fronteras tecnológicas.</h4>
@@ -52,7 +52,7 @@
                 {% for skill in skills %}
                 <div class="card__skills">
                     <div class="skill__thumbnail">
-                        <img class="skill__logo" src='{{ skill.image.url }}' alt="html5">
+                        <img class="skill__logo" src='{{ skill.image.url }}' alt="html5" width="70px">
                     </div>
                     <div class="skill__texto">
                         <p class="skill__titulo">{{ skill.title }}</p>
