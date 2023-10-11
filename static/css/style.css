@@ -12,14 +12,6 @@
 }
 .about {
     background-image: url(../img/Portadaverdedorado2.jpg);
-    
-}
-#about {
-    background-position: right center;
-    min-height: 60vh;
-    background-attachment:scroll;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
 }
 .portfolio {
     background-image: url(../img/Portadaverdedorado3.jpg);
@@ -82,14 +74,6 @@
 	padding: 0 10px;
 	display: block;
 }
-@media screen and (max-width: 768px) {
-    .footer__texto {
-        font-size: 14px;
-        flex-wrap: wrap;
-        font-weight: normal;
-        text-align: center;
-    }
-}
 .footer__icono:hover {
     color: rgb(255, 255, 255);
     font-size: 33px;
@@ -129,4 +113,21 @@
     margin-top: 5px;
     font-size: 16px;
     color: #033F62;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__texto {
+        font-size: 14px;
+        flex-wrap: wrap;
+        font-weight: normal;
+        text-align: center;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prof-text {
+        margin: 10px;
+    }
 }
